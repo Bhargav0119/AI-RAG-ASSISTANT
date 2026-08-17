@@ -17,3 +17,11 @@ __pycache__/
 # Windows/macOS system files
 Thumbs.db
 .DS_Store
+
+# RAG data files
+data/uploads/*
+data/processed/*
+
+# Keep directory structure
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
