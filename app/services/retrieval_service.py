@@ -2,7 +2,7 @@ import ollama
 
 from app.services.pinecone_service import pc, INDEX_NAME
 
-def retrieve_relevant_chunks(question: str, top_k: int = 3):
+def retrieve_relevant_chunks(question: str, top_k: int = 2):
     response = ollama.embed(
         model = "embeddinggemma",
         input =question
